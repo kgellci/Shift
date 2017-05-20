@@ -1,0 +1,6 @@
+framework module Shift {
+  umbrella header "Shift-umbrella.h"
+
+  export *
+  module * { export * }
+}

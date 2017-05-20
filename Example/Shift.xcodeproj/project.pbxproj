@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* Shift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		69D17944C6E4A58883A65C1A /* Shift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Shift.podspec; path = ../Shift.podspec; sourceTree = "<group>"; };
+		69D17944C6E4A58883A65C1A /* Shift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Shift.podspec; path = ../Shift.podspec; sourceTree = "<group>"; };
 		91E798B11FE01E4D78F85F10 /* Pods-Shift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shift_Example/Pods-Shift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A04A0B62EE8469975A81819F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A04A0B62EE8469975A81819F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B7F3A1B1D3423FB398BA94B8 /* Pods_Shift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87A275EF199140D45C8E0CA /* Pods-Shift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shift_Example/Pods-Shift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FF166612D41D28FE4DAB63F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FF166612D41D28FE4DAB63F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,6 +496,7 @@
 			baseConfigurationReference = C87A275EF199140D45C8E0CA /* Pods-Shift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Shift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -510,6 +511,7 @@
 			baseConfigurationReference = 91E798B11FE01E4D78F85F10 /* Pods-Shift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Shift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -523,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 084FA83008DD15298B56E041 /* Pods-Shift_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E35A1E310DBF2CBB43808CA /* Pods-Shift_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

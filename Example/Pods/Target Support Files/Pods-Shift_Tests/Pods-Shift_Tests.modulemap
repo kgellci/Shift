@@ -1,0 +1,6 @@
+framework module Pods_Shift_Tests {
+  umbrella header "Pods-Shift_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import Shift
 
 class ViewController: UIViewController {
+    @IBOutlet weak var button: ShiftButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let shiftView = view as! ShiftView
+        shiftView.start(shiftPoint: .left)
+        shiftView.end(shiftPoint: .right)
+        shiftView.setColors([UIColor.red, UIColor.purple, UIColor.purple, UIColor.yellow])
+        shiftView.startMotionAnimation()
+        
+        button.start(shiftPoint: .left)
+        button.end(shiftPoint: .right)
+        button.maskToText = true
+        button.startMotionAnimation()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
