@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'Shift_Example' do
+  pod 'Shift', :path => '../'
+
+  target 'Shift_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.0.0'
+  pod 'Nimble', '~> 5.1.1'
+  end
+end
