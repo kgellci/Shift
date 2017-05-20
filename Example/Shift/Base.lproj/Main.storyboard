@@ -26,19 +26,28 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Buy It NOW"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold_star" translatesAutoresizingMaskIntoConstraints="NO" id="abk-3Z-Jpn" customClass="ShiftImageView" customModule="Shift">
+                                <rect key="frame" x="155" y="389" width="64" height="64"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6tK-k4-a4v" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0O7-ke-nmz"/>
                             <constraint firstItem="6tK-k4-a4v" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="TSw-ta-Ius"/>
+                            <constraint firstItem="abk-3Z-Jpn" firstAttribute="top" secondItem="6tK-k4-a4v" secondAttribute="bottom" constant="36.5" id="Xce-mb-spc"/>
+                            <constraint firstItem="abk-3Z-Jpn" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tHP-Fp-mkm"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="6tK-k4-a4v" id="44G-yK-R8O"/>
+                        <outlet property="imageView" destination="abk-3Z-Jpn" id="xJo-lC-sSe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="gold_star" width="64" height="64"/>
+    </resources>
 </document>

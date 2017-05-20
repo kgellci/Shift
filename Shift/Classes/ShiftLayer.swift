@@ -72,8 +72,14 @@ public class ShiftLayer: CAGradientLayer {
         gradientColors = colors.map({ $0.cgColor })
     }
     
-    func startAnimationUsingMotion() {
+    private func removeAnimations() {
+        self.motion?.stopAccelerometerUpdates()
+        self.motion = nil
         removeAllAnimations()
+    }
+    
+    func startAnimationUsingMotion() {
+        removeAnimations()
         let (startColors, endColors) = colorsForMotionAnimation()
         colors = startColors
         drawsAsynchronously = true
@@ -93,7 +99,7 @@ public class ShiftLayer: CAGradientLayer {
     }
     
     func startTimedAnimation() {
-        removeAllAnimations()
+        removeAnimations()
         animateGradient()
     }
     

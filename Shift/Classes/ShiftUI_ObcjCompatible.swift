@@ -185,3 +185,39 @@ open class ShiftTextView_Objc: ShiftTextView {
         super.startMotionAnimation()
     }
 }
+
+// ImageView
+
+open class ShiftImageView_Objc: ShiftImageView {
+    public func setColors(_ colors: [UIColor]) {
+        super.setColors(colors)
+    }
+    
+    public func start(shiftPoint: ShiftPoint) {
+        super.start(shiftPoint: shiftPoint)
+    }
+    
+    public func end(shiftPoint: ShiftPoint) {
+        super.end(shiftPoint: shiftPoint)
+    }
+    
+    public func start(customPoint: CGPoint) {
+        super.start(customPoint: customPoint)
+    }
+    
+    public func end(customPoint: CGPoint) {
+        super.end(customPoint: customPoint)
+    }
+    
+    public func animationDuration(_ duration: TimeInterval) {
+        super.animationDuration(duration)
+    }
+    
+    public func startTimedAnimation() {
+        super.startTimedAnimation()
+    }
+    
+    public func startMotionAnimation() {
+        super.startMotionAnimation()
+    }
+}
