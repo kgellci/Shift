@@ -32,7 +32,8 @@ class ViewController: UIViewController {
         button.maskToText = true
         button.startTimedAnimation()
         
-        maskableLabel.setText("HELLO WORLD!")
+        maskableLabel.textLabel.font = UIFont.boldSystemFont(ofSize: 22)
+        maskableLabel.setText("Shift!")
         maskableLabel.start(shiftPoint: .left)
         maskableLabel.end(shiftPoint: .right)
         maskableLabel.animationDuration(3.0)

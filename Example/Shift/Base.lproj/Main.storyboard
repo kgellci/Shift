@@ -22,9 +22,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tK-k4-a4v" customClass="ShiftButton" customModule="Shift">
-                                <rect key="frame" x="142.5" y="313.5" width="89" height="39"/>
+                                <rect key="frame" x="118.5" y="313.5" width="137" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" title="Sign Up!"/>
+                                <state key="normal" title="I am a button"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold_star" translatesAutoresizingMaskIntoConstraints="NO" id="abk-3Z-Jpn" customClass="ShiftImageView" customModule="Shift">
                                 <rect key="frame" x="155" y="389" width="64" height="64"/>
