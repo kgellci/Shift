@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Shift'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Gradient Animation based on time or motion'
 
 # This description is used to generate tags and improve search results.
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Gradient Animation based on time or motion
-Currently under construction!
+Gradient Animation based on time or motion.
+Ability fo mask gradient animations on text or images.
                        DESC
 
   s.homepage         = 'https://github.com/kgellci/Shift'
