@@ -9,6 +9,13 @@
 
 ![Shift_gif.gif](README/Shift_gif.gif)
 
+Inspired by Pastel: https://github.com/cruisediary/Pastel
+
+Shift allows you to do gradient color animations on your UI using either a timed animation or the device tilting motion.
+
+You can also easily mask the gradient animation to images or text.  Couple this with the motion based animation and 
+you will get an effect similar to the Robinhood app.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
