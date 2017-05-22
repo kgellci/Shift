@@ -8,6 +8,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Shift.svg?style=flat)](http://cocoapods.org/pods/Shift)
 
 ![Shift_gif.gif](README/Shift_gif.gif)
+![handle_logo_gradient.gif](README/handle_logo_gradient.gif)
 
 Inspired by Pastel: https://github.com/cruisediary/Pastel
 
