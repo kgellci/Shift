@@ -12,9 +12,13 @@ import Shift
 class ViewController: UIViewController {
     @IBOutlet weak var button: ShiftButton!
     @IBOutlet weak var imageView: ShiftImageView!
+    @IBOutlet weak var maskableLabel: ShiftMaskableLabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let view = self.view as! ShiftView
+        view.setColors([UIColor.orange, UIColor.red, UIColor.purple, UIColor.purple])
+        view.startTimedAnimation()
 
         imageView.start(shiftPoint: .left)
         imageView.end(shiftPoint: .right)
@@ -24,8 +28,16 @@ class ViewController: UIViewController {
         
         button.start(shiftPoint: .left)
         button.end(shiftPoint: .right)
+        button.animationDuration(3.0)
         button.maskToText = true
         button.startTimedAnimation()
+        
+        maskableLabel.setText("HELLO WORLD!")
+        maskableLabel.start(shiftPoint: .left)
+        maskableLabel.end(shiftPoint: .right)
+        maskableLabel.animationDuration(3.0)
+        maskableLabel.maskToText = true
+        maskableLabel.startTimedAnimation()
     }
 }
 

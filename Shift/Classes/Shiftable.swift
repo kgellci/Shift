@@ -23,6 +23,7 @@ public protocol Shiftable {
     func animationDuration(_ duration: TimeInterval)
     func startTimedAnimation()
     func startMotionAnimation()
+    func stopAnimation()
 }
 
 public extension Shiftable {
@@ -62,6 +63,10 @@ public extension Shiftable {
     
     public func startMotionAnimation() {
         shiftLayer.startAnimationUsingMotion()
+    }
+    
+    public func stopAnimation() {
+        shiftLayer.stopAnimation()
     }
 }
 

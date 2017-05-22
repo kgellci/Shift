@@ -40,7 +40,7 @@ fileprivate extension CABasicAnimation {
 }
 
 public class ShiftLayer: CAGradientLayer {
-    var animationDuration: TimeInterval = 5.0
+    open var animationDuration: TimeInterval = 5.0
     var gradientColors = [UIColor.white.cgColor,
                           UIColor.black.cgColor]
 
@@ -68,7 +68,7 @@ public class ShiftLayer: CAGradientLayer {
         drawsAsynchronously = true
     }
     
-    func populateWithColors(_ colors: [UIColor]) {
+    public func populateWithColors(_ colors: [UIColor]) {
         gradientColors = colors.map({ $0.cgColor })
     }
     
@@ -78,7 +78,7 @@ public class ShiftLayer: CAGradientLayer {
         removeAllAnimations()
     }
     
-    func startAnimationUsingMotion() {
+    public func startAnimationUsingMotion() {
         removeAnimations()
         let (startColors, endColors) = colorsForMotionAnimation()
         colors = startColors
@@ -98,9 +98,13 @@ public class ShiftLayer: CAGradientLayer {
         self.motion = motion
     }
     
-    func startTimedAnimation() {
+    public func startTimedAnimation() {
         removeAnimations()
         animateGradient()
+    }
+    
+    public func stopAnimation() {
+        removeAnimations()
     }
     
     
@@ -108,7 +112,6 @@ public class ShiftLayer: CAGradientLayer {
         guard checkGradientColorsValid() else {
             return ([], [])
         }
-        print("(\(gradientInterval % gradientColors.count), \((gradientInterval + 1) % gradientColors.count)) -> (\((gradientInterval + 1) % gradientColors.count), \((gradientInterval + 2) % gradientColors.count))")
         let startColors = [gradientColors[gradientInterval % gradientColors.count],
                            gradientColors[(gradientInterval + 1) % gradientColors.count]]
         
@@ -149,7 +152,7 @@ public class ShiftLayer: CAGradientLayer {
     
     override open func removeFromSuperlayer() {
         super.removeFromSuperlayer()
-        removeAllAnimations()
+        removeAnimations()
     }
 }
 

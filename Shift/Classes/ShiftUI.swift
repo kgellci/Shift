@@ -91,6 +91,46 @@ open class ShiftLabel: UILabel, Shiftable {
     }
 }
 
+// Label
+
+open class ShiftMaskableLabel: ShiftView {
+    public let textLabel = UILabel()
+    public var maskToText = false {
+        didSet {
+            if maskToText {
+                self.mask = self.textLabel
+            } else {
+                self.mask = nil
+            }
+        }
+    }
+    
+    open override var intrinsicContentSize: CGSize {
+        return textLabel.intrinsicContentSize
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupLabel()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupLabel()
+    }
+    
+    private func setupLabel() {
+        addSubview(textLabel)
+        textLabel.shifFillParent()
+    }
+    
+    public func setText(_ text: String) {
+        textLabel.text = text
+        textLabel.sizeToFit()
+    }
+    
+}
+
 // TextField
 
 open class ShiftTextfield: UITextField, Shiftable {
@@ -181,6 +221,8 @@ open class ShiftImageView: UIImageView, Shiftable {
 
 extension UIView {
     func shifFillParent() {
+        guard let bounds = superview?.bounds else { return }
+        self.frame = bounds
         shiftPinToSuperview(.bottom)
         shiftPinToSuperview(.top)
         shiftPinToSuperview(.left)
