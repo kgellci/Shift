@@ -84,7 +84,7 @@ ShiftTextView()
 ShiftImageView()
 ```
 
-Each UI class has an Objective-C exuivalend, just add _Objc to the class name, ShiftView_Objc
+Each UI class has an Objective-C equivalent, just add _Objc to the class name, ShiftView_Objc
 
 ## Requirements
 
