@@ -1,10 +1,10 @@
 PODS:
-  - Nimble (5.1.1)
+  - Nimble (7.0.1)
   - Quick (1.0.0)
-  - Shift (0.1.0)
+  - Shift (0.2.0)
 
 DEPENDENCIES:
-  - Nimble (~> 5.1.1)
+  - Nimble (~> 7.0.1)
   - Quick (~> 1.0.0)
   - Shift (from `../`)
 
@@ -13,10 +13,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
-  Shift: c683988cbaf60024869ffa7bc881639c6d944c17
+  Shift: 7ca8c2e3471d65d20c1878e8d0f93b39fdce31f3
 
-PODFILE CHECKSUM: fd2c8633bbaa6233d96413e35e723a99ae9a8484
+PODFILE CHECKSUM: b528e9aeea5f405fe5b663b8c2b49bef7ef0e76f
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.1.1

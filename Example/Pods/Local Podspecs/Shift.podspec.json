@@ -1,8 +1,8 @@
 {
   "name": "Shift",
-  "version": "0.1.0",
-  "summary": "A short description of Shift.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.2.0",
+  "summary": "Gradient Animation based on time or motion",
+  "description": "Gradient Animation based on time or motion.\nAbility fo mask gradient animations on text or images.",
   "homepage": "https://github.com/kgellci/Shift",
   "license": {
     "type": "MIT",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/kgellci/Shift.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
+  "social_media_url": "https://twitter.com/kgellci",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Shift/Classes/**/*"
+  "source_files": "Shift/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "CoreMotion"
+  ]
 }
