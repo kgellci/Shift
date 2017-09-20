@@ -88,7 +88,7 @@ Each UI class has an Objective-C equivalent, just add _Objc to the class name, S
 
 ## Requirements
 
-Swift 3.0, iOS 8.  Compatible with Obj-c
+Swift 4.0, iOS 8.  Compatible with Obj-c
 
 ## Installation
 
