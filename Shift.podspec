@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Shift'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Gradient Animation based on time or motion'
 
 # This description is used to generate tags and improve search results.
