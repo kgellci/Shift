@@ -127,6 +127,7 @@ open class ShiftMaskableLabel: ShiftView {
     public func setText(_ text: String) {
         textLabel.text = text
         textLabel.sizeToFit()
+        invalidateIntrinsicContentSize()
     }
     
 }
