@@ -7,21 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B88497151CAFFF327952B4087B5A41 /* ShiftLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053B328F4856CB767B4683A8BB6BBB5 /* ShiftLayer.swift */; };
 		1CAF7716C1FA2A7E4611226F69CADEA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0F9888074F3663D96135BA3928B5DD /* Foundation.framework */; };
+		1CAF9782F98CB14DA95EF94D1B5BDDD5 /* ShiftPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE0D42734E9328DD53ACDD301DDF3A /* ShiftPoint.swift */; };
+		1E92DC82298819C56A424F2B965B8A4D /* Shiftable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A40B8FF6DA0874D29A41997AFFDCD /* Shiftable.swift */; };
 		29AE9975237C09E32E51DA1D9C89269A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33773F17CC3526A9334002637FE62161 /* CoreMotion.framework */; };
 		2F6ED7725262D582BF8A3AC756BEA54B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0F9888074F3663D96135BA3928B5DD /* Foundation.framework */; };
-		5032CB94527612093F190B53AAE43A2D /* ShiftPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF0DD3E28509E54968AD5F54E5687C /* ShiftPoint.swift */; };
-		5D7C952F4FC745AE092B3A2EA55B626C /* ShiftUI_ObcjCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A04DC9480AE86702AF8A2C89278671 /* ShiftUI_ObcjCompatible.swift */; };
-		60946A0B85E1F483E98F50EC5B5F8FA0 /* Shift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EACEEF36ACBA6345FAFF0E76234B3A0D /* Shift-dummy.m */; };
 		723B29C2B4986DD6E3400633ACCC3544 /* Pods-Shift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCA7E144659A2E84A0C3020FC53ECE7 /* Pods-Shift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		767899C60AAB68E1589483BE311E9D20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8636B0927283198FE634570C44D266F /* UIKit.framework */; };
-		8340F628CD705C1E2BA78BE8C3308A80 /* ShiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B547D76CB7F23B31757DC32F018FAE5F /* ShiftUI.swift */; };
-		88B32337FCD1346815F676C7F4A0400A /* Shiftable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7708294F179C791C4F81B0BBC577224D /* Shiftable.swift */; };
-		924865CD3F75CA9AA7DF8E27AC36BDDB /* Shift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B0788C7FE09617589A71E8D2B779A0 /* Shift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924865CD3F75CA9AA7DF8E27AC36BDDB /* Shift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB463C1D549A0AB778086730431DEE0F /* Shift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D31BF4DAF431E6A666452028B87A744E /* Pods-Shift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5B9887C9BBD2FD941F131484774B6F /* Pods-Shift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7272CE365F3F174027EC5011D39A1CF /* Shift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 981A7A2DEB8CF63F2A68875388736939 /* Shift-dummy.m */; };
 		D7EE26055AF89C99815910AAEEDDED05 /* Pods-Shift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC0A0912D321B9BA60D716B55FCEEBC /* Pods-Shift_Example-dummy.m */; };
 		DF30F86E04F03858912D710FCE9993E9 /* Pods-Shift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C77EF488A68871242979636BA0AC31B /* Pods-Shift_Tests-dummy.m */; };
+		E3D34ABC780ACE8268DF309B4208721D /* ShiftLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D3286C84D67BE674AEC4659B8B448 /* ShiftLayer.swift */; };
+		F872CCC4BA2FD397E289378D054FDFD4 /* ShiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB994FB8F32904D0107CA15C7D1D4A /* ShiftUI.swift */; };
 		F9023CACAA76EDA744B55BCFFBC505D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0F9888074F3663D96135BA3928B5DD /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,45 +44,44 @@
 /* Begin PBXFileReference section */
 		014E74C033E50629D61F560754129D88 /* Pods-Shift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		025B9A0B8173ADD78661860837604B29 /* Pods-Shift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		03B0788C7FE09617589A71E8D2B779A0 /* Shift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shift-umbrella.h"; sourceTree = "<group>"; };
-		049405C0934C2F257237DFA51EA57BFF /* Shift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shift-prefix.pch"; sourceTree = "<group>"; };
 		0C77EF488A68871242979636BA0AC31B /* Pods-Shift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shift_Tests-dummy.m"; sourceTree = "<group>"; };
-		141E059AD7A6B34860EC506B8ED54E14 /* Shift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Shift.xcconfig; sourceTree = "<group>"; };
+		1DB6D98965928FF1E1C6F8BC9697036C /* Shift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Shift.xcconfig; sourceTree = "<group>"; };
 		1F5CEF9847001DC70A168D3AE859FAA6 /* Pods-Shift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		27042D6C3C059BECFCE369BD1FDCF573 /* Pods-Shift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shift_Example.modulemap"; sourceTree = "<group>"; };
 		33773F17CC3526A9334002637FE62161 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
-		39279916309288D58952567AF99BA538 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3ABB994FB8F32904D0107CA15C7D1D4A /* ShiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftUI.swift; path = Shift/Classes/ShiftUI.swift; sourceTree = "<group>"; };
+		3BEE0D42734E9328DD53ACDD301DDF3A /* ShiftPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftPoint.swift; path = Shift/Classes/ShiftPoint.swift; sourceTree = "<group>"; };
 		3DFCB4931644DD7C3BAE178FB29F2E14 /* Pods-Shift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3F5B9887C9BBD2FD941F131484774B6F /* Pods-Shift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shift_Example-umbrella.h"; sourceTree = "<group>"; };
-		4053B328F4856CB767B4683A8BB6BBB5 /* ShiftLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftLayer.swift; path = Shift/Classes/ShiftLayer.swift; sourceTree = "<group>"; };
 		427A0B8B864209EDD6D65CC484C1308A /* Pods-Shift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		457DE0FC5C0384ADDF3F96F8B0CF819A /* Shift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Shift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4A0F9888074F3663D96135BA3928B5DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4A95CE6AB58D97661179F1E41F3900CC /* Pods-Shift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shift_Tests.modulemap"; sourceTree = "<group>"; };
 		4AFCE6D9A6074A98F58A17C4AA975334 /* Pods-Shift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4CFF0DD3E28509E54968AD5F54E5687C /* ShiftPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftPoint.swift; path = Shift/Classes/ShiftPoint.swift; sourceTree = "<group>"; };
+		667D3286C84D67BE674AEC4659B8B448 /* ShiftLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftLayer.swift; path = Shift/Classes/ShiftLayer.swift; sourceTree = "<group>"; };
 		6A96BEBABBDF9F340994C1742A907484 /* Pods-Shift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shift_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6BCA7E144659A2E84A0C3020FC53ECE7 /* Pods-Shift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		72A5BD6E3DBD30F4A1AA74AEF89998D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7708294F179C791C4F81B0BBC577224D /* Shiftable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shiftable.swift; path = Shift/Classes/Shiftable.swift; sourceTree = "<group>"; };
+		6D6D6D2EE03B94666F578AED59CFA538 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7390932A2E66C1ABDFA8AD8AF51EEF09 /* Shift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shift-prefix.pch"; sourceTree = "<group>"; };
 		832982BD8CCB2379F2C6C62F96F839BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87604419A2B009AC355426BFEA0794A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		8BE11E457CC630B19CD23CFA24A6F4EF /* Pods-Shift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E8A40B8FF6DA0874D29A41997AFFDCD /* Shiftable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shiftable.swift; path = Shift/Classes/Shiftable.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		981A7A2DEB8CF63F2A68875388736939 /* Shift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Shift-dummy.m"; sourceTree = "<group>"; };
 		98A67071F0F3E4B4705E15AFF87F5E3B /* Pods-Shift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B547D76CB7F23B31757DC32F018FAE5F /* ShiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftUI.swift; path = Shift/Classes/ShiftUI.swift; sourceTree = "<group>"; };
+		AC9F251BA83025A8D707D14AB53D7338 /* Shift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Shift.modulemap; sourceTree = "<group>"; };
 		B8636B0927283198FE634570C44D266F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB463C1D549A0AB778086730431DEE0F /* Shift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Shift-umbrella.h"; sourceTree = "<group>"; };
 		CB29297C8DF7459223077CA4DB48C0AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D17567FD3ABAB895D5443530A2970279 /* Pods-Shift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D4E86D6D72E749A518627BD0B542E638 /* Pods_Shift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E86D6D72E749A518627BD0B542E638 /* Pods_Shift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shift_Tests.framework; path = "Pods-Shift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5926FEAC6EC0317D9A47E155E5C4118 /* Pods-Shift_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shift_Tests-resources.sh"; sourceTree = "<group>"; };
 		DCC0A0912D321B9BA60D716B55FCEEBC /* Pods-Shift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shift_Example-dummy.m"; sourceTree = "<group>"; };
-		E32609532F8D1D662DB01BAC016D8264 /* Pods_Shift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3E617628A1644C29F9BBC8DBD9F3262 /* Shift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Shift.modulemap; sourceTree = "<group>"; };
-		E7A04DC9480AE86702AF8A2C89278671 /* ShiftUI_ObcjCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShiftUI_ObcjCompatible.swift; path = Shift/Classes/ShiftUI_ObcjCompatible.swift; sourceTree = "<group>"; };
+		E32609532F8D1D662DB01BAC016D8264 /* Pods_Shift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shift_Example.framework; path = "Pods-Shift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB8AA0F367BAE944622FA5E19E8E443 /* Pods-Shift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shift_Example-resources.sh"; sourceTree = "<group>"; };
-		EACEEF36ACBA6345FAFF0E76234B3A0D /* Shift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Shift-dummy.m"; sourceTree = "<group>"; };
-		EF0EE0616531014CF4F582463B9A1436 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB6846CC7278E3C53B6D41EED0097B1A /* Shift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6846CC7278E3C53B6D41EED0097B1A /* Shift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Shift.framework; path = Shift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2DD765E1F1777B0B03DC32C12CF991 /* Shift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Shift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE152FC6EB519A80AFC519F28EB0E293 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,25 +122,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		581E2253759EE05E03D71954F305AEE0 /* Pod */ = {
+		3317DEFA669E68FFC7384345722C947D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				39279916309288D58952567AF99BA538 /* LICENSE */,
-				72A5BD6E3DBD30F4A1AA74AEF89998D8 /* README.md */,
-				457DE0FC5C0384ADDF3F96F8B0CF819A /* Shift.podspec */,
+				FE152FC6EB519A80AFC519F28EB0E293 /* Info.plist */,
+				AC9F251BA83025A8D707D14AB53D7338 /* Shift.modulemap */,
+				1DB6D98965928FF1E1C6F8BC9697036C /* Shift.xcconfig */,
+				981A7A2DEB8CF63F2A68875388736939 /* Shift-dummy.m */,
+				7390932A2E66C1ABDFA8AD8AF51EEF09 /* Shift-prefix.pch */,
+				BB463C1D549A0AB778086730431DEE0F /* Shift-umbrella.h */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Shift";
+			sourceTree = "<group>";
+		};
+		461F8D6F3E55C933A6713621339A50A0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				963077A129C24D5D0099EB5CB6927B2C /* Shift */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B9F4194DA302938F973AAD6650B4E7BE /* Development Pods */,
+				461F8D6F3E55C933A6713621339A50A0 /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				A92362509EB02328F841FA94194AE6B4 /* Products */,
 				A141716FEB3C2329022DCC69DCADAB0D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		963077A129C24D5D0099EB5CB6927B2C /* Shift */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A40B8FF6DA0874D29A41997AFFDCD /* Shiftable.swift */,
+				667D3286C84D67BE674AEC4659B8B448 /* ShiftLayer.swift */,
+				3BEE0D42734E9328DD53ACDD301DDF3A /* ShiftPoint.swift */,
+				3ABB994FB8F32904D0107CA15C7D1D4A /* ShiftUI.swift */,
+				D1DFCEDE13F8DC97197B8002737AD661 /* Pod */,
+				3317DEFA669E68FFC7384345722C947D /* Support Files */,
+			);
+			name = Shift;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		9FFAE9D0B039CA7A83F535912D8D3197 /* iOS */ = {
@@ -174,29 +198,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4B3AA4EE01DB0551FAE09970A373448 /* Shift */ = {
-			isa = PBXGroup;
-			children = (
-				7708294F179C791C4F81B0BBC577224D /* Shiftable.swift */,
-				4053B328F4856CB767B4683A8BB6BBB5 /* ShiftLayer.swift */,
-				4CFF0DD3E28509E54968AD5F54E5687C /* ShiftPoint.swift */,
-				B547D76CB7F23B31757DC32F018FAE5F /* ShiftUI.swift */,
-				E7A04DC9480AE86702AF8A2C89278671 /* ShiftUI_ObcjCompatible.swift */,
-				581E2253759EE05E03D71954F305AEE0 /* Pod */,
-				FBECF593691C58EE7A88A7D1C80213FB /* Support Files */,
-			);
-			name = Shift;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B9F4194DA302938F973AAD6650B4E7BE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B4B3AA4EE01DB0551FAE09970A373448 /* Shift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		C9F7FD4202582D1181B7F60AC4DE6286 /* Pods-Shift_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +216,16 @@
 			path = "Target Support Files/Pods-Shift_Example";
 			sourceTree = "<group>";
 		};
+		D1DFCEDE13F8DC97197B8002737AD661 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				87604419A2B009AC355426BFEA0794A7 /* LICENSE */,
+				6D6D6D2EE03B94666F578AED59CFA538 /* README.md */,
+				FC2DD765E1F1777B0B03DC32C12CF991 /* Shift.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		EDA280C08F4D31306AD8F1946A411136 /* Pods-Shift_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,20 +242,6 @@
 			);
 			name = "Pods-Shift_Tests";
 			path = "Target Support Files/Pods-Shift_Tests";
-			sourceTree = "<group>";
-		};
-		FBECF593691C58EE7A88A7D1C80213FB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EF0EE0616531014CF4F582463B9A1436 /* Info.plist */,
-				E3E617628A1644C29F9BBC8DBD9F3262 /* Shift.modulemap */,
-				141E059AD7A6B34860EC506B8ED54E14 /* Shift.xcconfig */,
-				EACEEF36ACBA6345FAFF0E76234B3A0D /* Shift-dummy.m */,
-				049405C0934C2F257237DFA51EA57BFF /* Shift-prefix.pch */,
-				03B0788C7FE09617589A71E8D2B779A0 /* Shift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Shift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12E8C4327FA0068CF729D567050055BC /* Build configuration list for PBXNativeTarget "Shift" */;
 			buildPhases = (
-				4076DF089A6990500E28E0D0B8D188DF /* Sources */,
+				119886D3F4A86162A1978362F2FE866D /* Sources */,
 				719A702D550DC5133A0A6354EE7B97D3 /* Frameworks */,
 				86BF7FE3250E80C20F9E8C245F1232AF /* Headers */,
 			);
@@ -359,16 +356,15 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4076DF089A6990500E28E0D0B8D188DF /* Sources */ = {
+		119886D3F4A86162A1978362F2FE866D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60946A0B85E1F483E98F50EC5B5F8FA0 /* Shift-dummy.m in Sources */,
-				88B32337FCD1346815F676C7F4A0400A /* Shiftable.swift in Sources */,
-				04B88497151CAFFF327952B4087B5A41 /* ShiftLayer.swift in Sources */,
-				5032CB94527612093F190B53AAE43A2D /* ShiftPoint.swift in Sources */,
-				8340F628CD705C1E2BA78BE8C3308A80 /* ShiftUI.swift in Sources */,
-				5D7C952F4FC745AE092B3A2EA55B626C /* ShiftUI_ObcjCompatible.swift in Sources */,
+				D7272CE365F3F174027EC5011D39A1CF /* Shift-dummy.m in Sources */,
+				1E92DC82298819C56A424F2B965B8A4D /* Shiftable.swift in Sources */,
+				E3D34ABC780ACE8268DF309B4208721D /* ShiftLayer.swift in Sources */,
+				1CAF9782F98CB14DA95EF94D1B5BDDD5 /* ShiftPoint.swift in Sources */,
+				F872CCC4BA2FD397E289378D054FDFD4 /* ShiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +473,7 @@
 		};
 		4365159D87EC7D78541C6D4798FB3B78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 141E059AD7A6B34860EC506B8ED54E14 /* Shift.xcconfig */;
+			baseConfigurationReference = 1DB6D98965928FF1E1C6F8BC9697036C /* Shift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -543,7 +539,7 @@
 		};
 		534C9BB38798EEA781DED40CBBE5F308 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 141E059AD7A6B34860EC506B8ED54E14 /* Shift.xcconfig */;
+			baseConfigurationReference = 1DB6D98965928FF1E1C6F8BC9697036C /* Shift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -725,7 +721,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
