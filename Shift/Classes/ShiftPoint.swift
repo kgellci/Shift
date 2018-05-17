@@ -8,7 +8,6 @@
 
 import Foundation
 
-@objc
 public enum ShiftPoint: Int {
     case left
     case top

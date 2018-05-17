@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s0t-Sv-Rdw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="Imk-rq-9vf">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Shift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s0t-Sv-Rdw" customClass="ViewController" customModule="Shift_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="vlR-HM-Xf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="8SN-2p-bmd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="ShiftView" customModule="Shift">
+                    <view key="view" contentMode="scaleToFill" id="dXM-bO-Ntw" customClass="ShiftView" customModule="Shift">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tK-k4-a4v" customClass="ShiftButton" customModule="Shift">
-                                <rect key="frame" x="118.5" y="313.5" width="137" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAY-vF-xBM" customClass="ShiftButton" customModule="Shift">
+                                <rect key="frame" x="120.5" y="313.5" width="133" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="I am a button"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold_star" translatesAutoresizingMaskIntoConstraints="NO" id="abk-3Z-Jpn" customClass="ShiftImageView" customModule="Shift">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold_star" translatesAutoresizingMaskIntoConstraints="NO" id="unI-Wr-wiJ" customClass="ShiftImageView" customModule="Shift">
                                 <rect key="frame" x="155" y="389" width="64" height="64"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2k-7i-WDT" customClass="ShiftMaskableLabel" customModule="Shift">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esq-c6-NYZ" customClass="ShiftMaskableLabel" customModule="Shift">
                                 <rect key="frame" x="67" y="155" width="240" height="128"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" placeholder="YES" id="lSh-gK-vsR"/>
-                                    <constraint firstAttribute="height" constant="128" placeholder="YES" id="pFO-nb-Q8o"/>
+                                    <constraint firstAttribute="height" constant="128" placeholder="YES" id="Hzf-2Y-zNV"/>
+                                    <constraint firstAttribute="width" constant="240" placeholder="YES" id="lPf-vg-HVe"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6tK-k4-a4v" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0O7-ke-nmz"/>
-                            <constraint firstItem="6tK-k4-a4v" firstAttribute="top" secondItem="H2k-7i-WDT" secondAttribute="bottom" constant="30.5" id="6W6-sR-rIJ"/>
-                            <constraint firstItem="6tK-k4-a4v" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="TSw-ta-Ius"/>
-                            <constraint firstItem="abk-3Z-Jpn" firstAttribute="top" secondItem="6tK-k4-a4v" secondAttribute="bottom" constant="36.5" id="Xce-mb-spc"/>
-                            <constraint firstItem="abk-3Z-Jpn" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tHP-Fp-mkm"/>
-                            <constraint firstItem="H2k-7i-WDT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zgh-DZ-u7w"/>
+                            <constraint firstItem="Esq-c6-NYZ" firstAttribute="centerX" secondItem="dXM-bO-Ntw" secondAttribute="centerX" id="4qf-WW-Pzi"/>
+                            <constraint firstItem="mAY-vF-xBM" firstAttribute="centerX" secondItem="dXM-bO-Ntw" secondAttribute="centerX" id="Jv6-IQ-s8F"/>
+                            <constraint firstItem="unI-Wr-wiJ" firstAttribute="top" secondItem="mAY-vF-xBM" secondAttribute="bottom" constant="36.5" id="N5I-0u-LFv"/>
+                            <constraint firstItem="mAY-vF-xBM" firstAttribute="top" secondItem="Esq-c6-NYZ" secondAttribute="bottom" constant="30.5" id="cnZ-PO-X3Q"/>
+                            <constraint firstItem="mAY-vF-xBM" firstAttribute="centerY" secondItem="dXM-bO-Ntw" secondAttribute="centerY" id="ePr-0B-xti"/>
+                            <constraint firstItem="unI-Wr-wiJ" firstAttribute="centerX" secondItem="dXM-bO-Ntw" secondAttribute="centerX" id="zr8-q6-wVX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="6tK-k4-a4v" id="44G-yK-R8O"/>
-                        <outlet property="imageView" destination="abk-3Z-Jpn" id="xJo-lC-sSe"/>
-                        <outlet property="maskableLabel" destination="H2k-7i-WDT" id="izO-Gh-dXk"/>
+                        <outlet property="button" destination="mAY-vF-xBM" id="CfW-zw-7Bo"/>
+                        <outlet property="imageView" destination="unI-Wr-wiJ" id="TQC-n8-mcx"/>
+                        <outlet property="maskableLabel" destination="Esq-c6-NYZ" id="WVj-sP-Yo4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6U-dy-u2E" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

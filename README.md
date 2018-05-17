@@ -1,11 +1,10 @@
 # Shift
 
-![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
-[![Platform](https://img.shields.io/cocoapods/p/Pastel.svg?style=flat)](http://cocoapods.org/pods/Pastel)
-[![CI Status](http://img.shields.io/travis/kgellci/Shift.svg?style=flat)](https://travis-ci.org/kgellci/Shift)
-[![Version](https://img.shields.io/cocoapods/v/Shift.svg?style=flat)](http://cocoapods.org/pods/Shift)
-[![License](https://img.shields.io/cocoapods/l/Shift.svg?style=flat)](http://cocoapods.org/pods/Shift)
-[![Platform](https://img.shields.io/cocoapods/p/Shift.svg?style=flat)](http://cocoapods.org/pods/Shift)
+![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
+[![CI Status](https://img.shields.io/travis/kgellci/Shift.svg?style=flat)](https://travis-ci.org/kgellci/Shift)
+[![Version](https://img.shields.io/cocoapods/v/Shift.svg?style=flat)](https://cocoapods.org/pods/Shift)
+[![License](https://img.shields.io/cocoapods/l/Shift.svg?style=flat)](https://cocoapods.org/pods/Shift)
+[![Platform](https://img.shields.io/cocoapods/p/Shift.svg?style=flat)](https://cocoapods.org/pods/Shift)
 
 ![Shift_gif.gif](README/Shift_gif.gif)
 ![handle_logo_gradient.gif](README/handle_logo_gradient.gif)
@@ -84,11 +83,9 @@ ShiftTextView()
 ShiftImageView()
 ```
 
-Each UI class has an Objective-C equivalent, just add _Objc to the class name, ShiftView_Objc
-
 ## Requirements
 
-Swift 4.0, iOS 8.  Compatible with Obj-c
+Swift 4.0, iOS 8.
 
 ## Installation
 
@@ -101,7 +98,7 @@ pod "Shift"
 
 ## Author
 
-kgellci, kgellci@gmail.com, @kgellci
+kgellci, @kgellci
 
 ## License
 

@@ -9,39 +9,39 @@
 import UIKit
 
 open class ShiftView_Objc: ShiftView {
-    @objc public func setColors(_ colors: [UIColor]) {
+    public func setColors(_ colors: [UIColor]) {
         super.setColors(colors)
     }
     
-    @objc public func start(shiftPoint: ShiftPoint) {
+    public func start(shiftPoint: ShiftPoint) {
         super.start(shiftPoint: shiftPoint)
     }
     
-    @objc public func end(shiftPoint: ShiftPoint) {
+    public func end(shiftPoint: ShiftPoint) {
         super.end(shiftPoint: shiftPoint)
     }
     
-    @objc public func start(customPoint: CGPoint) {
+    public func start(customPoint: CGPoint) {
         super.start(customPoint: customPoint)
     }
     
-    @objc public func end(customPoint: CGPoint) {
+    public func end(customPoint: CGPoint) {
         super.end(customPoint: customPoint)
     }
     
-    @objc public func animationDuration(_ duration: TimeInterval) {
+    public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
     
-    @objc public func startTimedAnimation() {
+    public func startTimedAnimation() {
         super.startTimedAnimation()
     }
     
-    @objc public func startMotionAnimation() {
+    public func startMotionAnimation() {
         super.startMotionAnimation()
     }
     
-    @objc public func stopAnimation() {
+    public func stopAnimation() {
         super.stopAnimation()
     }
 }
@@ -49,39 +49,39 @@ open class ShiftView_Objc: ShiftView {
 // Button
 
 open class ShiftButton_Objc: ShiftButton {
-    @objc public func setColors(_ colors: [UIColor]) {
+    public func setColors(_ colors: [UIColor]) {
         super.setColors(colors)
     }
     
-    @objc public func start(shiftPoint: ShiftPoint) {
+    public func start(shiftPoint: ShiftPoint) {
         super.start(shiftPoint: shiftPoint)
     }
     
-    @objc public func end(shiftPoint: ShiftPoint) {
+    public func end(shiftPoint: ShiftPoint) {
         super.end(shiftPoint: shiftPoint)
     }
     
-    @objc public func start(customPoint: CGPoint) {
+    public func start(customPoint: CGPoint) {
         super.start(customPoint: customPoint)
     }
     
-    @objc public func end(customPoint: CGPoint) {
+    public func end(customPoint: CGPoint) {
         super.end(customPoint: customPoint)
     }
     
-    @objc public func animationDuration(_ duration: TimeInterval) {
+    public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
     
-    @objc public func startTimedAnimation() {
+    public func startTimedAnimation() {
         super.startTimedAnimation()
     }
     
-    @objc public func startMotionAnimation() {
+    public func startMotionAnimation() {
         super.startMotionAnimation()
     }
     
-    @objc public func stopAnimation() {
+    public func stopAnimation() {
         super.stopAnimation()
     }
 }
@@ -89,77 +89,77 @@ open class ShiftButton_Objc: ShiftButton {
 // Label
 
 open class ShiftLabel_Objc: ShiftLabel {
-    @objc public func setColors(_ colors: [UIColor]) {
+    public func setColors(_ colors: [UIColor]) {
         super.setColors(colors)
     }
     
-    @objc public func start(shiftPoint: ShiftPoint) {
+    public func start(shiftPoint: ShiftPoint) {
         super.start(shiftPoint: shiftPoint)
     }
     
-    @objc public func end(shiftPoint: ShiftPoint) {
+    public func end(shiftPoint: ShiftPoint) {
         super.end(shiftPoint: shiftPoint)
     }
     
-    @objc public func start(customPoint: CGPoint) {
+    public func start(customPoint: CGPoint) {
         super.start(customPoint: customPoint)
     }
     
-    @objc public func end(customPoint: CGPoint) {
+    public func end(customPoint: CGPoint) {
         super.end(customPoint: customPoint)
     }
     
-    @objc public func animationDuration(_ duration: TimeInterval) {
+    public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
     
-    @objc public func startTimedAnimation() {
+    public func startTimedAnimation() {
         super.startTimedAnimation()
     }
     
-    @objc public func startMotionAnimation() {
+    public func startMotionAnimation() {
         super.startMotionAnimation()
     }
     
-    @objc public func stopAnimation() {
+    public func stopAnimation() {
         super.stopAnimation()
     }
 }
 
 open class ShiftMaskableLabel_Objc: ShiftMaskableLabel {
-    @objc public func setColors(_ colors: [UIColor]) {
+    public func setColors(_ colors: [UIColor]) {
         super.setColors(colors)
     }
     
-    @objc public func start(shiftPoint: ShiftPoint) {
+    public func start(shiftPoint: ShiftPoint) {
         super.start(shiftPoint: shiftPoint)
     }
     
-    @objc public func end(shiftPoint: ShiftPoint) {
+    public func end(shiftPoint: ShiftPoint) {
         super.end(shiftPoint: shiftPoint)
     }
     
-    @objc public func start(customPoint: CGPoint) {
+    public func start(customPoint: CGPoint) {
         super.start(customPoint: customPoint)
     }
     
-    @objc public func end(customPoint: CGPoint) {
+    public func end(customPoint: CGPoint) {
         super.end(customPoint: customPoint)
     }
     
-    @objc public func animationDuration(_ duration: TimeInterval) {
+    public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
     
-    @objc public func startTimedAnimation() {
+    public func startTimedAnimation() {
         super.startTimedAnimation()
     }
     
-    @objc public func startMotionAnimation() {
+    public func startMotionAnimation() {
         super.startMotionAnimation()
     }
     
-    @objc public func stopAnimation() {
+    public func stopAnimation() {
         super.stopAnimation()
     }
 }
@@ -167,39 +167,39 @@ open class ShiftMaskableLabel_Objc: ShiftMaskableLabel {
 // TextField
 
 open class ShiftTextfield_Objc: ShiftTextfield {
-    @objc public func setColors(_ colors: [UIColor]) {
+    public func setColors(_ colors: [UIColor]) {
         super.setColors(colors)
     }
     
-    @objc public func start(shiftPoint: ShiftPoint) {
+    public func start(shiftPoint: ShiftPoint) {
         super.start(shiftPoint: shiftPoint)
     }
     
-    @objc public func end(shiftPoint: ShiftPoint) {
+    public func end(shiftPoint: ShiftPoint) {
         super.end(shiftPoint: shiftPoint)
     }
     
-    @objc public func start(customPoint: CGPoint) {
+    public func start(customPoint: CGPoint) {
         super.start(customPoint: customPoint)
     }
     
-    @objc public func end(customPoint: CGPoint) {
+    public func end(customPoint: CGPoint) {
         super.end(customPoint: customPoint)
     }
     
-    @objc public func animationDuration(_ duration: TimeInterval) {
+    public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
     
-    @objc public func startTimedAnimation() {
+    public func startTimedAnimation() {
         super.startTimedAnimation()
     }
     
-    @objc public func startMotionAnimation() {
+    public func startMotionAnimation() {
         super.startMotionAnimation()
     }
     
-    @objc public func stopAnimation() {
+    public func stopAnimation() {
         super.stopAnimation()
     }
 }
@@ -207,39 +207,39 @@ open class ShiftTextfield_Objc: ShiftTextfield {
 // TextView
 
 open class ShiftTextView_Objc: ShiftTextView {
-    @objc public func setColors(_ colors: [UIColor]) {
+    public func setColors(_ colors: [UIColor]) {
         super.setColors(colors)
     }
 
-    @objc public func start(shiftPoint: ShiftPoint) {
+    public func start(shiftPoint: ShiftPoint) {
         super.start(shiftPoint: shiftPoint)
     }
     
-    @objc public func end(shiftPoint: ShiftPoint) {
+    public func end(shiftPoint: ShiftPoint) {
         super.end(shiftPoint: shiftPoint)
     }
     
-    @objc public func start(customPoint: CGPoint) {
+    public func start(customPoint: CGPoint) {
         super.start(customPoint: customPoint)
     }
     
-    @objc public func end(customPoint: CGPoint) {
+    public func end(customPoint: CGPoint) {
         super.end(customPoint: customPoint)
     }
     
-    @objc public func animationDuration(_ duration: TimeInterval) {
+    public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
     
-    @objc public func startTimedAnimation() {
+    public func startTimedAnimation() {
         super.startTimedAnimation()
     }
     
-    @objc public func startMotionAnimation() {
+    public func startMotionAnimation() {
         super.startMotionAnimation()
     }
     
-    @objc public func stopAnimation() {
+    public func stopAnimation() {
         super.stopAnimation()
     }
 }
@@ -247,39 +247,39 @@ open class ShiftTextView_Objc: ShiftTextView {
 // ImageView
 
 open class ShiftImageView_Objc: ShiftImageView {
-    @objc public func setColors(_ colors: [UIColor]) {
+    public func setColors(_ colors: [UIColor]) {
         super.setColors(colors)
     }
     
-    @objc public func start(shiftPoint: ShiftPoint) {
+    public func start(shiftPoint: ShiftPoint) {
         super.start(shiftPoint: shiftPoint)
     }
     
-    @objc public func end(shiftPoint: ShiftPoint) {
+    public func end(shiftPoint: ShiftPoint) {
         super.end(shiftPoint: shiftPoint)
     }
     
-    @objc public func start(customPoint: CGPoint) {
+    public func start(customPoint: CGPoint) {
         super.start(customPoint: customPoint)
     }
     
-    @objc public func end(customPoint: CGPoint) {
+    public func end(customPoint: CGPoint) {
         super.end(customPoint: customPoint)
     }
     
-    @objc public func animationDuration(_ duration: TimeInterval) {
+    public func animationDuration(_ duration: TimeInterval) {
         super.animationDuration(duration)
     }
     
-    @objc public func startTimedAnimation() {
+    public func startTimedAnimation() {
         super.startTimedAnimation()
     }
     
-    @objc public func startMotionAnimation() {
+    public func startMotionAnimation() {
         super.startMotionAnimation()
     }
     
-    @objc public func stopAnimation() {
+    public func stopAnimation() {
         super.stopAnimation()
     }
 }
