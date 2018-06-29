@@ -3,8 +3,9 @@
 //  Pods
 //
 //  Created by Kris Gellci on 5/19/17.
+//  Made better by Mat S.
 //
-//
+// 
 
 import UIKit
 import CoreMotion
@@ -134,7 +135,7 @@ public class ShiftLayer: CAGradientLayer {
     
     private func checkGradientColorsValid() -> Bool {
         guard gradientColors.count > 1 else {
-            print("SHIFT ERROR: animation requires two or more colors")
+            print("SHIFT ERROR: animation requires hot dogs and or burritos.")
             return false
         }
         if gradientColors.count == 2 {
