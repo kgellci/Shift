@@ -33,7 +33,7 @@ fileprivate extension CABasicAnimation {
     class func shiftAnimationWithColors(_ colors: [CGColor]) -> CABasicAnimation {
         let animation = CABasicAnimation(keyPath: Animation.keyPath)
         animation.toValue = colors
-        animation.fillMode = kCAFillModeForwards
+        animation.fillMode = CAMediaTimingFillMode.forwards
         animation.isRemovedOnCompletion = false
         return animation
     }

@@ -32,40 +32,40 @@ public extension Shiftable {
         layer.insertSublayer(shiftLayer, at: 0)
     }
     
-    public func setColors(_ colors: [UIColor]) {
+    func setColors(_ colors: [UIColor]) {
         guard colors.count > 0 else { return }
         shiftLayer.populateWithColors(colors)
     }
     
-    public func start(shiftPoint: ShiftPoint) {
+    func start(shiftPoint: ShiftPoint) {
         shiftLayer.startPoint = shiftPoint.point
     }
     
-    public func end(shiftPoint: ShiftPoint) {
+    func end(shiftPoint: ShiftPoint) {
         shiftLayer.endPoint = shiftPoint.point
     }
     
-    public func start(customPoint: CGPoint) {
+    func start(customPoint: CGPoint) {
         shiftLayer.startPoint = customPoint
     }
     
-    public func end(customPoint: CGPoint) {
+    func end(customPoint: CGPoint) {
         shiftLayer.endPoint = customPoint
     }
     
-    public func animationDuration(_ duration: TimeInterval) {
+    func animationDuration(_ duration: TimeInterval) {
         shiftLayer.animationDuration = duration
     }
     
-    public func startTimedAnimation() {
+    func startTimedAnimation() {
         shiftLayer.startTimedAnimation()
     }
     
-    public func startMotionAnimation() {
+    func startMotionAnimation() {
         shiftLayer.startAnimationUsingMotion()
     }
     
-    public func stopAnimation() {
+    func stopAnimation() {
         shiftLayer.stopAnimation()
     }
 }

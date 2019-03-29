@@ -18,7 +18,7 @@ extension World {
         registerSharedExample(name, closure: closure)
     }
 
-    internal func describe(_ description: String, flags: FilterFlags, closure: () -> ()) {
+    internal func describe(_ description: String, flags: FilterFlags, closure: () -> Void) {
         guard currentExampleMetadata == nil else {
             raiseError("'describe' cannot be used inside '\(currentPhase)', 'describe' may only be used inside 'context' or 'describe'. ")
         }
@@ -30,20 +30,20 @@ extension World {
         performWithCurrentExampleGroup(group, closure: closure)
     }
 
-    internal func context(_ description: String, flags: FilterFlags, closure: () -> ()) {
+    internal func context(_ description: String, flags: FilterFlags, closure: () -> Void) {
         guard currentExampleMetadata == nil else {
             raiseError("'context' cannot be used inside '\(currentPhase)', 'context' may only be used inside 'context' or 'describe'. ")
         }
         self.describe(description, flags: flags, closure: closure)
     }
 
-    internal func fdescribe(_ description: String, flags: FilterFlags, closure: () -> ()) {
+    internal func fdescribe(_ description: String, flags: FilterFlags, closure: () -> Void) {
         var focusedFlags = flags
         focusedFlags[Filter.focused] = true
         self.describe(description, flags: focusedFlags, closure: closure)
     }
 
-    internal func xdescribe(_ description: String, flags: FilterFlags, closure: () -> ()) {
+    internal func xdescribe(_ description: String, flags: FilterFlags, closure: () -> Void) {
         var pendingFlags = flags
         pendingFlags[Filter.pending] = true
         self.describe(description, flags: pendingFlags, closure: closure)
@@ -56,7 +56,7 @@ extension World {
         currentExampleGroup.hooks.appendBefore(closure)
     }
 
-#if _runtime(_ObjC)
+#if (os(macOS) || os(iOS) || os(tvOS) || os(watchOS)) && !SWIFT_PACKAGE
     @objc(beforeEachWithMetadata:)
     internal func beforeEach(closure: @escaping BeforeExampleWithMetadataClosure) {
         currentExampleGroup.hooks.appendBefore(closure)
@@ -74,7 +74,7 @@ extension World {
         currentExampleGroup.hooks.appendAfter(closure)
     }
 
-#if _runtime(_ObjC)
+#if (os(macOS) || os(iOS) || os(tvOS) || os(watchOS)) && !SWIFT_PACKAGE
     @objc(afterEachWithMetadata:)
     internal func afterEach(closure: @escaping AfterExampleWithMetadataClosure) {
         currentExampleGroup.hooks.appendAfter(closure)
@@ -85,7 +85,8 @@ extension World {
     }
 #endif
 
-    internal func it(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> ()) {
+    @nonobjc
+    internal func it(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> Void) {
         if beforesCurrentlyExecuting {
             raiseError("'it' cannot be used inside 'beforeEach', 'it' may only be used inside 'context' or 'describe'. ")
         }
@@ -100,18 +101,21 @@ extension World {
         currentExampleGroup.appendExample(example)
     }
 
-    internal func fit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> ()) {
+    @nonobjc
+    internal func fit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> Void) {
         var focusedFlags = flags
         focusedFlags[Filter.focused] = true
         self.it(description, flags: focusedFlags, file: file, line: line, closure: closure)
     }
 
-    internal func xit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> ()) {
+    @nonobjc
+    internal func xit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> Void) {
         var pendingFlags = flags
         pendingFlags[Filter.pending] = true
         self.it(description, flags: pendingFlags, file: file, line: line, closure: closure)
     }
 
+    @nonobjc
     internal func itBehavesLike(_ name: String, sharedExampleContext: @escaping SharedExampleContext, flags: FilterFlags, file: String, line: UInt) {
         guard currentExampleMetadata == nil else {
             raiseError("'itBehavesLike' cannot be used inside '\(currentPhase)', 'itBehavesLike' may only be used inside 'context' or 'describe'. ")
@@ -131,29 +135,66 @@ extension World {
         }
     }
 
-#if _runtime(_ObjC)
+    @nonobjc
+    internal func fitBehavesLike(_ name: String, sharedExampleContext: @escaping SharedExampleContext, flags: FilterFlags, file: String, line: UInt) {
+        var focusedFlags = flags
+        focusedFlags[Filter.focused] = true
+        self.itBehavesLike(name, sharedExampleContext: sharedExampleContext, flags: focusedFlags, file: file, line: line)
+    }
+
+    internal func itBehavesLike<C>(_ behavior: Behavior<C>.Type, context: @escaping () -> C, flags: FilterFlags, file: String, line: UInt) {
+        guard currentExampleMetadata == nil else {
+            raiseError("'itBehavesLike' cannot be used inside '\(currentPhase)', 'itBehavesLike' may only be used inside 'context' or 'describe'. ")
+        }
+        let callsite = Callsite(file: file, line: line)
+        let closure = behavior.spec
+        let group = ExampleGroup(description: behavior.name, flags: flags)
+        currentExampleGroup.appendExampleGroup(group)
+        performWithCurrentExampleGroup(group) {
+            closure(context)
+        }
+
+        group.walkDownExamples { (example: Example) in
+            example.isSharedExample = true
+            example.callsite = callsite
+        }
+    }
+
+    internal func fitBehavesLike<C>(_ behavior: Behavior<C>.Type, context: @escaping () -> C, flags: FilterFlags, file: String, line: UInt) {
+        var focusedFlags = flags
+        focusedFlags[Filter.focused] = true
+        self.itBehavesLike(behavior, context: context, flags: focusedFlags, file: file, line: line)
+    }
+
+    internal func xitBehavesLike<C>(_ behavior: Behavior<C>.Type, context: @escaping () -> C, flags: FilterFlags, file: String, line: UInt) {
+        var pendingFlags = flags
+        pendingFlags[Filter.pending] = true
+        self.itBehavesLike(behavior, context: context, flags: pendingFlags, file: file, line: line)
+    }
+
+#if (os(macOS) || os(iOS) || os(tvOS) || os(watchOS)) && !SWIFT_PACKAGE
     @objc(itWithDescription:flags:file:line:closure:)
-    private func objc_it(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> ()) {
+    internal func objc_it(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> Void) {
         it(description, flags: flags, file: file, line: line, closure: closure)
     }
 
     @objc(fitWithDescription:flags:file:line:closure:)
-    private func objc_fit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> ()) {
+    internal func objc_fit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> Void) {
         fit(description, flags: flags, file: file, line: line, closure: closure)
     }
 
     @objc(xitWithDescription:flags:file:line:closure:)
-    private func objc_xit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> ()) {
+    internal func objc_xit(_ description: String, flags: FilterFlags, file: String, line: UInt, closure: @escaping () -> Void) {
         xit(description, flags: flags, file: file, line: line, closure: closure)
     }
 
     @objc(itBehavesLikeSharedExampleNamed:sharedExampleContext:flags:file:line:)
-    private func objc_itBehavesLike(_ name: String, sharedExampleContext: @escaping SharedExampleContext, flags: FilterFlags, file: String, line: UInt) {
+    internal func objc_itBehavesLike(_ name: String, sharedExampleContext: @escaping SharedExampleContext, flags: FilterFlags, file: String, line: UInt) {
         itBehavesLike(name, sharedExampleContext: sharedExampleContext, flags: flags, file: file, line: line)
     }
 #endif
 
-    internal func pending(_ description: String, closure: () -> ()) {
+    internal func pending(_ description: String, closure: () -> Void) {
         print("Pending: \(description)")
     }
 

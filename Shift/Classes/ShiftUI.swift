@@ -230,7 +230,7 @@ extension UIView {
         shiftPinToSuperview(.right)
     }
     
-    func shiftPinToSuperview(_ attribute: NSLayoutAttribute) {
+    func shiftPinToSuperview(_ attribute: NSLayoutConstraint.Attribute) {
         let constraint = NSLayoutConstraint(item: self, attribute: attribute, relatedBy: .equal, toItem: self.superview, attribute: attribute, multiplier: 1.0, constant: 0)
         self.superview?.addConstraint(constraint)
     }
